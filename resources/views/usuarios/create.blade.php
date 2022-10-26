@@ -21,7 +21,7 @@
             <div class="form-group">
                     <input type="submit" name="save_usuario" value="Salvar usuário" class="btn btn-success">
                     <input type="submit" name="cancel" value="Cancelar" class="btn btn-info">
-                </div>
+            </div>
 
         <form>
     </div>

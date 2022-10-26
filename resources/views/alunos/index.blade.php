@@ -20,19 +20,19 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach($professores as $professor)
+            @foreach($alunos as $aluno)
                 <tr>
-                    <td>{{ $usuario->id }}</td>
-                    <td>{{ $usuario->nome }}</td>
-                    <td>{{ $usuario->registro }}</td>
-                    <td>{{ $usuario->cpf }}</td>
-                    <td>{{ $usuario->formacao }}</td>
-                    <td>{{ $usuario->cidade }}</td>
-                    <td>{{ $usuario->telefone }}</td>
+                    <td>{{ $aluno->id }}</td>
+                    <td>{{ $aluno->nome }}</td>
+                    <td>{{ $aluno->registro }}</td>
+                    <td>{{ $aluno->cpf }}</td>
+                    <td>{{ $aluno->formacao }}</td>
+                    <td>{{ $aluno->cidade }}</td>
+                    <td>{{ $aluno->telefone }}</td>
                     <td>
                         <ul class="list-inline">
-                            <li> <a href="{{ route('professor.edit', ['id' => $professor->id]) }}">Editar</a> </li>
-                            <li> <a href="{{ route('professor.destroy', ['id' => $professor->id]) }}">Deletar</a>  </li>
+                            <li> <a href="{{ route('aluno.edit', ['id' => $aluno->id]) }}">Editar</a> </li>
+                            <li> <a href="{{ route('aluno.destroy', ['id' => $aluno->id]) }}">Deletar</a>  </li>
                         </ul>
                     </td>
                 </tr>
@@ -49,7 +49,7 @@
             </button>
     </div>
     @endif
-    <div class="col-md-8"> <a href="{{ route('professor.create') }}" class="btn btn-primary">Incluir Professor</a> </div>
+    <div class="col-md-8"> <a href="{{ route('aluno.create') }}" class="btn btn-primary">Incluir Professor</a> </div>
 </div>
 @endsection
 
