@@ -9,5 +9,6 @@ class Professor extends Model
 {
     public $timestamps = false;
     public $table = 'professores';
+
     use HasFactory;
 }

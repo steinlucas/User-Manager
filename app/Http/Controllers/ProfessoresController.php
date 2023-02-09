@@ -8,6 +8,13 @@ use App\Models\Professor;
 
 class ProfessoresController extends Controller
 {
+
+    public function edit($id)
+    {
+        $professor = Professor::find($id);
+        return view('professores.edit',compact('professor'));
+    }
+
     public function index()
     {
         $professores = Professor::all();
@@ -75,6 +82,7 @@ class ProfessoresController extends Controller
        
         return redirect()->to(route('usuario.index'));
     }
+
 
     public function destroy($id)
     {
